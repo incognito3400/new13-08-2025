@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern web application with improved code structure">
+    <meta name="keywords" content="HTML, CSS, JavaScript, modern web">
+    <title>Improved Web Application</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="app.js" as="script">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo" aria-label="Home">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#2563eb"/>
+                        <text x="20" y="25" text-anchor="middle" fill="white" font-size="20" font-weight="bold">W</text>
+                    </svg>
+                </a>
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" role="menuitem" class="nav-link">Home</a></li>
+                    <li role="none"><a href="#about" role="menuitem" class="nav-link">About</a></li>
+                    <li role="none"><a href="#services" role="menuitem" class="nav-link">Services</a></li>
+                    <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="hero-title">Welcome to Improved Code</h1>
+                <p class="hero-subtitle">Modern, accessible, and performant web development</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" data-action="get-started">Get Started</button>
+                    <button class="btn btn-secondary" data-action="learn-more">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>Modern Practices</h3>
+                        <p>Using the latest web standards and best practices for optimal performance.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Accessibility First</h3>
+                        <p>Built with accessibility in mind, ensuring everyone can use our applications.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Performance Optimized</h3>
+                        <p>Lightning-fast load times and smooth interactions across all devices.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <ul class="service-list">
+                    <li class="service-item">
+                        <h3>Web Development</h3>
+                        <p>Custom web applications built with modern frameworks</p>
+                    </li>
+                    <li class="service-item">
+                        <h3>UI/UX Design</h3>
+                        <p>Beautiful, intuitive interfaces that users love</p>
+                    </li>
+                    <li class="service-item">
+                        <h3>Performance Optimization</h3>
+                        <p>Speed up your existing applications</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Improved Code. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
+</body>
+</html>
